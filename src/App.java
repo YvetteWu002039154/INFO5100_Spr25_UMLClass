@@ -1,4 +1,3 @@
-import Accounts.Account;
 import Accounts.AccountType;
 import Accounts.InvestmentAccount;
 import Accounts.LoanAccount;
@@ -15,6 +14,7 @@ public class App {
         System.out.println("---------------------------------------");
 
         AccountType accountType = new AccountType("Loan",1);
+        AccountType accountType01 = new AccountType("Investment",2);
 
         AgeGroup ageGroup = new AgeGroup(20,10,"Minor");
 
@@ -30,13 +30,13 @@ public class App {
         InvestmentAccount investmentAccount01 = new InvestmentAccount
                                                     (
                                                         "investmentaccount01", 
-                                                        accountType, 
+                                                        accountType01, 
                                                         3, client01, 
                                                         "makeingmoney@@"
                                                     );
         bankSystem.addAccount(loadAccount01);
         bankSystem.addAccount(investmentAccount01);
-        
+
         System.out.println("The following are the accounts in our bank: ");
         bankSystem.listAccounts();
 
