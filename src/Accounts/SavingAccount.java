@@ -2,12 +2,12 @@ package Accounts;
 
 import Clients.Client;
 
-public class SavingAccount {
+public class SavingAccount extends Account{
     private float interestRate;
     private String nickname;
 
     public SavingAccount(String name, AccountType accountType, int aID, Client client, float interestRate, String nickname) {
-        super();
+        super(name, accountType, aID, client);
         this.interestRate = interestRate;
         this.nickname = nickname;
     }

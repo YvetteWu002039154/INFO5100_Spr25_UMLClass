@@ -35,7 +35,8 @@ public class App {
                                                         "makeingmoney@@"
                                                     );
         bankSystem.addAccount(loadAccount01);
-
+        bankSystem.addAccount(investmentAccount01);
+        
         System.out.println("The following are the accounts in our bank: ");
         bankSystem.listAccounts();
 

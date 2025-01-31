@@ -2,11 +2,11 @@ package Accounts;
 
 import Clients.Client;
 
-public class CheckingAccount {
+public class CheckingAccount extends Account{
     private String nickname;
 
     public CheckingAccount(String name, AccountType accountType, int aID, Client client, String nickname) {
-        super();
+        super(name, accountType, aID, client);
         this.nickname = nickname;
     }
 
